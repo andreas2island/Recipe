@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="sv">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Familjens recept – ladda ned appen</title>
+<meta name="description" content="Familjens egen receptbok: recept, veckomeny och inköpslista som fungerar offline.">
+<meta name="theme-color" content="#2F4A3A">
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%20512%20512%22%3E%0A%20%20%3Cdefs%3E%0A%20%20%20%20%3CradialGradient%20id%3D%22bg%22%20cx%3D%2250%25%22%20cy%3D%2238%25%22%20r%3D%2275%25%22%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%220%22%20stop-color%3D%22%234A7260%22/%3E%3Cstop%20offset%3D%221%22%20stop-color%3D%22%23253B2F%22/%3E%0A%20%20%20%20%3C/radialGradient%3E%0A%20%20%20%20%3ClinearGradient%20id%3D%22pot%22%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%220%22%20y2%3D%221%22%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%220%22%20stop-color%3D%22%23FFF8EA%22/%3E%3Cstop%20offset%3D%221%22%20stop-color%3D%22%23E9DCC2%22/%3E%0A%20%20%20%20%3C/linearGradient%3E%0A%20%20%3C/defs%3E%0A%20%20%3Crect%20width%3D%22512%22%20height%3D%22512%22%20fill%3D%22url%28%23bg%29%22/%3E%0A%20%20%3C%21--%20%C3%A5nga%20--%3E%0A%20%20%3Cg%20fill%3D%22none%22%20stroke%3D%22%23F4EBD9%22%20stroke-width%3D%2213%22%20stroke-linecap%3D%22round%22%20opacity%3D%22.85%22%3E%0A%20%20%20%20%3Cpath%20d%3D%22M206%20170c-16-18%2016-30%200-50s14-30%200-44%22/%3E%0A%20%20%20%20%3Cpath%20d%3D%22M256%20160c-16-18%2016-30%200-50s14-30%200-44%22/%3E%0A%20%20%20%20%3Cpath%20d%3D%22M306%20170c-16-18%2016-30%200-50s14-30%200-44%22/%3E%0A%20%20%3C/g%3E%0A%20%20%3C%21--%20lock%20--%3E%0A%20%20%3Cpath%20d%3D%22M150%20232c10-34%2056-52%20106-52s96%2018%20106%2052z%22%20fill%3D%22url%28%23pot%29%22/%3E%0A%20%20%3Crect%20x%3D%22236%22%20y%3D%22164%22%20width%3D%2240%22%20height%3D%2222%22%20rx%3D%2211%22%20fill%3D%22%23F4EBD9%22/%3E%0A%20%20%3Crect%20x%3D%22136%22%20y%3D%22228%22%20width%3D%22240%22%20height%3D%2218%22%20rx%3D%229%22%20fill%3D%22%23D9C8A8%22/%3E%0A%20%20%3C%21--%20handtag%20--%3E%0A%20%20%3Crect%20x%3D%22104%22%20y%3D%22266%22%20width%3D%2250%22%20height%3D%2224%22%20rx%3D%2212%22%20fill%3D%22%23E3D4B6%22/%3E%0A%20%20%3Crect%20x%3D%22358%22%20y%3D%22266%22%20width%3D%2250%22%20height%3D%2224%22%20rx%3D%2212%22%20fill%3D%22%23E3D4B6%22/%3E%0A%20%20%3C%21--%20gryta%20--%3E%0A%20%20%3Cpath%20d%3D%22M146%20250h220v74c0%2042-34%2072-76%2072h-68c-42%200-76-30-76-72z%22%20fill%3D%22url%28%23pot%29%22/%3E%0A%20%20%3C%21--%20lingonhj%C3%A4rta%20--%3E%0A%20%20%3Cpath%20d%3D%22M256%20352c-30-20-48-36-48-56%200-14%2011-24%2024-24%2010%200%2018%206%2024%2014%206-8%2014-14%2024-14%2013%200%2024%2010%2024%2024%200%2020-18%2036-48%2056z%22%20fill%3D%22%23B8324A%22/%3E%0A%3C/svg%3E%0A">
+<style>
+:root { --bg:#F7F5EC; --surface:#FFFFFF; --ink:#1D2620; --muted:#56645A; --line:#DCE2D4; --pine:#2F4A3A; --pine-ink:#FFFFFF; --accent:#B8324A;
+  box-sizing:border-box; padding-top:env(safe-area-inset-top,0px); padding-bottom:env(safe-area-inset-bottom,0px); }
+@media (prefers-color-scheme: dark) { :root { --bg:#121814; --surface:#1B231E; --ink:#E7ECE5; --muted:#A2B0A5; --line:#34423A; --pine:#8FC1A0; --pine-ink:#10180F; --accent:#F08A9C; } }
+*,*::before,*::after { box-sizing:border-box; }
+html,body { margin:0; background:var(--bg); color:var(--ink); font:17px/1.55 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif; }
+.hero { background:linear-gradient(135deg,#3E6150,#253B2F); color:#fff; padding:36px 20px 64px; text-align:center; border-radius:0 0 32px 32px; }
+.hero svg { width:112px; height:112px; border-radius:28px; box-shadow:0 10px 28px rgba(0,0,0,.3); }
+h1 { font-family:Georgia,"Noto Serif",serif; font-size:2rem; margin:16px 0 4px; }
+.tag { opacity:.9; margin:0; }
+main { max-width:560px; margin:-40px auto 0; padding:0 16px 40px; }
+.card { background:var(--surface); border:1px solid var(--line); border-radius:20px; padding:20px; box-shadow:0 8px 24px rgba(0,0,0,.08); margin-bottom:16px; }
+.download { display:flex; align-items:center; justify-content:center; gap:10px; min-height:60px; width:100%; border-radius:16px; background:var(--pine); color:var(--pine-ink);
+  font-size:1.15rem; font-weight:800; text-decoration:none; }
+.meta { text-align:center; color:var(--muted); font-size:.9rem; margin:10px 0 0; }
+h2 { font-family:Georgia,"Noto Serif",serif; font-size:1.25rem; margin:0 0 8px; }
+ol { padding-left:1.25em; margin:0; } li { margin:6px 0; }
+.features { display:grid; grid-template-columns:1fr 1fr; gap:10px; }
+.feature { background:var(--bg); border-radius:14px; padding:12px; font-size:.92rem; }
+.feature b { display:block; font-size:1rem; }
+small { color:var(--muted); }
+a { color:var(--pine); }
+</style>
+</head>
+<body>
+<header class="hero">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">   <defs>     <radialGradient id="bg" cx="50%" cy="38%" r="75%">       <stop offset="0" stop-color="#4A7260"/><stop offset="1" stop-color="#253B2F"/>     </radialGradient>     <linearGradient id="pot" x1="0" y1="0" x2="0" y2="1">       <stop offset="0" stop-color="#FFF8EA"/><stop offset="1" stop-color="#E9DCC2"/>     </linearGradient>   </defs>   <rect width="512" height="512" fill="url(#bg)"/>   <!-- ånga -->   <g fill="none" stroke="#F4EBD9" stroke-width="13" stroke-linecap="round" opacity=".85">     <path d="M206 170c-16-18 16-30 0-50s14-30 0-44"/>     <path d="M256 160c-16-18 16-30 0-50s14-30 0-44"/>     <path d="M306 170c-16-18 16-30 0-50s14-30 0-44"/>   </g>   <!-- lock -->   <path d="M150 232c10-34 56-52 106-52s96 18 106 52z" fill="url(#pot)"/>   <rect x="236" y="164" width="40" height="22" rx="11" fill="#F4EBD9"/>   <rect x="136" y="228" width="240" height="18" rx="9" fill="#D9C8A8"/>   <!-- handtag -->   <rect x="104" y="266" width="50" height="24" rx="12" fill="#E3D4B6"/>   <rect x="358" y="266" width="50" height="24" rx="12" fill="#E3D4B6"/>   <!-- gryta -->   <path d="M146 250h220v74c0 42-34 72-76 72h-68c-42 0-76-30-76-72z" fill="url(#pot)"/>   <!-- lingonhjärta -->   <path d="M256 352c-30-20-48-36-48-56 0-14 11-24 24-24 10 0 18 6 24 14 6-8 14-14 24-14 13 0 24 10 24 24 0 20-18 36-48 56z" fill="#B8324A"/> </svg> 
+  <h1>Familjens recept</h1>
+  <p class="tag">Familjens egen receptbok – även offline</p>
+</header>
+<main>
+  <section class="card">
+    <a class="download" id="dl" href="familjens-recept.apk" download>⬇ Ladda ned appen</a>
+    <p class="meta" id="meta">Söker senaste versionen…</p>
+    <details id="older" hidden><summary><small>Äldre versioner</small></summary><ul id="olderList"></ul></details>
+  </section>
+
+  <section class="card">
+    <h2>Så installerar du</h2>
+    <ol>
+      <li>Tryck <b>Ladda ned appen</b> och öppna filen när den laddats ned.</li>
+      <li>Om telefonen frågar: <b>tillåt installation</b> från webbläsaren eller Filer.</li>
+      <li>Varnar Play Protect: tryck <b>Mer information → Installera ändå</b>. Appen finns inte i Play Butik, därför varningen.</li>
+      <li>Öppna appen och välj <b>Jag har fått en inbjudan</b> – klistra in inbjudan du fått från familjen.</li>
+    </ol>
+    <p><small>Har du redan appen? Ladda ned och installera ovanpå – dina recept ligger kvar.</small></p>
+  </section>
+
+  <section class="card">
+    <h2>Det här kan appen</h2>
+    <div class="features">
+      <div class="feature"><b>📖 Recept</b>Egna recept med foton, betyg och portioner</div>
+      <div class="feature"><b>🗓️ Veckomeny</b>Planera veckan – förslag som tar hänsyn till allergier</div>
+      <div class="feature"><b>🛒 Inköpslista</b>Delad, bocka av i butiken, även offline</div>
+      <div class="feature"><b>📥 Import</b>Från länk, text eller foto</div>
+      <div class="feature"><b>🍳 Laga</b>Stora steg och timers i köket</div>
+      <div class="feature"><b>✨ Assistent</b>Fråga om recept och planering (valfritt)</div>
+    </div>
+  </section>
+
+  <p style="text-align:center"><small>Familjens data sparas i familjens egen databas. Appen innehåller inga lösenord eller nycklar.</small></p>
+</main>
+<script>
+/*
+ * Hittar högsta versionen bland APK-filerna i repot, oavsett namnform: familjens-recept-0.34.0.apk,
+ * familjens-recept-v0.34.0.apk, familjens-recept-full-v0_34_0.apk, "familjens-recept-0.34.0 (1).apk" …
+ * (via GitHubs öppna API; repot och ägaren läses från sidans adress, t.ex. andreas2island.github.io/familjens-recept/).
+ * Går det inte (t.ex. inget nät till API:t) används familjens-recept.apk om den finns.
+ */
+(function () {
+  var owner = location.hostname.split('.')[0];
+  var repo = location.pathname.split('/').filter(Boolean)[0] || (owner + '.github.io');
+  var dl = document.getElementById('dl'), meta = document.getElementById('meta');
+  function cmp(a, b) { for (var i = 0; i < 3; i++) { if (a[i] !== b[i]) return b[i] - a[i]; } return 0; }
+  fetch('https://api.github.com/repos/' + owner + '/' + repo + '/contents/', { headers: { Accept: 'application/vnd.github+json' } })
+    .then(function (r) { if (!r.ok) throw new Error(r.status); return r.json(); })
+    .then(function (files) {
+      var apks = files.map(function (f) {
+        // Tål olika namn: -v0.34.0, -full-0.34.0, v0_34_0, och telefonens kopior som " (1)" eller "-1".
+        var m = /^familjens[-_ ]?recept.*?v?(\d+)[._](\d+)[._](\d+)[^\/]*\.apk$/i.exec(f.name);
+        return m ? { name: f.name, v: [+m[1], +m[2], +m[3]], size: f.size } : null;
+      }).filter(Boolean).sort(function (a, b) { return cmp(a.v, b.v); });
+      if (!apks.length) { meta.textContent = 'För Android'; return; }
+      var top = apks[0];
+      dl.href = encodeURIComponent(top.name);
+      dl.setAttribute('download', top.name);
+      meta.textContent = 'Version ' + top.v.join('.') + ' · för Android · ' + (top.size / 1048576).toFixed(1).replace('.', ',') + ' MB';
+      if (apks.some(function (a) { return a.v.join('.') !== top.v.join('.'); })) {
+        var ul = document.getElementById('olderList');
+        var seenV = {}; seenV[top.v.join('.')] = 1;
+        apks.slice(1).filter(function (a) { var k = a.v.join('.'); if (seenV[k]) return false; seenV[k] = 1; return true; }).slice(0, 5).forEach(function (a) {
+          var li = document.createElement('li'); var link = document.createElement('a');
+          link.href = encodeURIComponent(a.name); link.textContent = 'Version ' + a.v.join('.'); link.setAttribute('download', a.name);
+          li.appendChild(link); ul.appendChild(li);
+        });
+        document.getElementById('older').hidden = false;
+      }
+    })
+    .catch(function () { meta.textContent = 'För Android'; });
+})();
+</script>
+</body>
+</html>
